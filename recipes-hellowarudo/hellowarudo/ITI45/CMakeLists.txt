@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.22)
 set(CMAKE_SYSTEM_NAME Generic)
 
 # project name 
-project(HelloFromTheOtherSiiide)
+project(hellowarudo)
 
 # define used languages
 enable_language(C)

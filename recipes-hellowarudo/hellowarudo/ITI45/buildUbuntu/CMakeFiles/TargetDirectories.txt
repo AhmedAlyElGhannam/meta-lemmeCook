@@ -1,3 +1,0 @@
-/home/nemesis/Playground/ELBS_Playground/Yocto_Playground/meta-lemmeCook/recipes-hellowarudo/hellowarudo/ITI45/buildUbuntu/CMakeFiles/hellowarudo.dir
-/home/nemesis/Playground/ELBS_Playground/Yocto_Playground/meta-lemmeCook/recipes-hellowarudo/hellowarudo/ITI45/buildUbuntu/CMakeFiles/edit_cache.dir
-/home/nemesis/Playground/ELBS_Playground/Yocto_Playground/meta-lemmeCook/recipes-hellowarudo/hellowarudo/ITI45/buildUbuntu/CMakeFiles/rebuild_cache.dir

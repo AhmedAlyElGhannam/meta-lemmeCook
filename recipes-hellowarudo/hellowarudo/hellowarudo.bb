@@ -12,6 +12,8 @@ PR = "r0"
 
 S = "${WORKDIR}"
 B = "${WORKDIR}/build"
+
+DEPENDS = "fasthello"
 	
 inherit cmake
 

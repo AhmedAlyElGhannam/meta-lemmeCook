@@ -1,0 +1,35 @@
+CMakeFiles/hellowarudo.dir/main.c.o: \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/meta-lemmeCook/recipes-hellowarudo/hellowarudo/ITI45/main.c \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/stdc-predef.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/stdio.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/libc-header-start.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/features.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/features-time64.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/wordsize.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/timesize.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/timesize-64.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/sys/cdefs.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/long-double.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/long-double-64.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/gnu/stubs.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/gnu/stubs-64.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/gnu/stubs-lp64.h \
+ /home/nemesis/Storage/Playground/ELBS_Playground/Yocto_Playground/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.5.0/include/stddef.h \
+ /home/nemesis/Storage/Playground/ELBS_Playground/Yocto_Playground/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/11.5.0/include/stdarg.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/types.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/typesizes.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/typesizes-64.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/time64.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/types/__fpos_t.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/types/__mbstate_t.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/types/__fpos64_t.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/types/__FILE.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/types/FILE.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/types/struct_FILE.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/stdio_lim.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/floatn.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/floatn-64.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/floatn-common.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/stdio2-decl.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/stdio.h \
+ /home/nemesis/Playground/ELBS_Playground/Yocto_Playground/sysroots/cortexa53-poky-linux/usr/include/bits/stdio2.h

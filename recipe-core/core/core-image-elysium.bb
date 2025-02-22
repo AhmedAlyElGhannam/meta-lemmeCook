@@ -5,14 +5,15 @@ LICENSE = "CLOSED"
 
 inherit core-image
 
-MACHINE_FEATURES = " alsa bluetooth touchscreen wifi "
+MACHINE_FEATURES += " alsa bluetooth touchscreen wifi "
 
-DISTRO_FEATURES = " alsa bluetooth ipv4 ipv6 opengl systemd systemd-resolved wayland " 
+DISTRO_FEATURES += " alsa bluetooth ipv4 ipv6 opengl systemd systemd-resolved wayland " 
 
 # have to set PSPLASH variable to the image I want to show
-IMAGE_FEATURES = " hwcodecs package-management splash ssh-server-openssh tools-debug tools-sdk tools-testapps weston"
+IMAGE_FEATURES += " hwcodecs package-management splash ssh-server-openssh tools-debug tools-sdk tools-testapps weston "
 
-IMAGE_INSTALL:append = " qtwayland bash connman-client"
+IMAGE_INSTALL:append = " bash connman-client htop vim nano rsync make cmake "
+IMAGE_INSTALL:append = " qt6app fastfetch "
 
 IMAGE_ROOTFS_EXTRA_SPACE = "5242880"
 

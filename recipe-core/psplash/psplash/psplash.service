@@ -1,0 +1,11 @@
+[Unit]
+DESCRIPTION=This unit makes sure splash screen starts at the right time to avoid issues with systemd 
+Requires=sys-devices-platform-gpu-graphics-fb0.device
+After=sys-devices-platform-gpu-graphics-fb0.device
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/psplash
+
+[Install]
+WantedBy=multi-user.target

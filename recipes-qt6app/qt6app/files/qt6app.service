@@ -1,0 +1,15 @@
+[Unit]
+DESCRIPTION="Systemd service to run qt app on startup"
+DOCUMENTATION=""
+After=
+Before=
+Wants=
+
+[Service]
+Type=simple
+ExecStart=/home/nemesis/appInfotainmentSystem-UI
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -30,4 +30,4 @@ do_install(){
 	install -m 0777 ${B}/${PN} ${D}/${bindir}/${PN}
 }
 
-COMPATIBLE_MACHINE = "raspberrypi3-64"
+#COMPATIBLE_MACHINE = "raspberrypi3-64"

@@ -3,7 +3,7 @@ LICENSE = "CLOSED"
 inherit useradd
 
 # adding bash dependency here
-DEPENDS = " bash "
+RDEPENDS:${PN} += " bash "
 
 # printf "%q" $(openssl passwd 123)
 PASSWD = "\$1\$N12AYgwa\$O/0MImfsfDt13ZoRcenyA."
@@ -13,7 +13,8 @@ NEWUSER = "nemesis"
 USERADD_PACKAGES = "${PN}"
 
 # added default shell as well
-USERADD_PARAM:${PN} += " -d /home/${NEWUSER} -p '${PASSWD}' -s /bin/bash ${NEWUSER}"
+#USERADD_PARAM:${PN} += " -d /home/${NEWUSER} -p '${PASSWD}' -s /bin/bash ${NEWUSER}"
+EXTRA_USERS_PARAMS += " -d /home/${NEWUSER} -p '${PASSWD}' -s /bin/bash ${NEWUSER}"
 
 do_install() {
 	install -d ${D}/home/${NEWUSER}

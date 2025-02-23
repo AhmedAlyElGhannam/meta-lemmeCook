@@ -6,7 +6,7 @@ SRC_URI = "git://github.com/AhmedAlyElGhannam/Simple-Infotainment-System-Using-Q
 # since I do not want to use a specific commit I will set it to AUTOREV
 SRCREV = "${AUTOREV}"
 
-inherit cmake
+inherit qt6-cmake qt6-paths
 
 DEPENDS += " \
     qtbase \
@@ -16,31 +16,34 @@ DEPENDS += " \
     qtlocation \
     qtpositioning \
     qtquick3d \
+    qtquicktimeline \
+    qttools \
 "
 
 RDEPENDS:${PN} += " \
-    qtwayland \
-    qtmultimedia \
+    qtbase \
     qtdeclarative \
+    qtmultimedia \
+    qtwayland \
     qtlocation \
     qtpositioning \
     qtquick3d \
+    qtquicktimeline \
+    qttools \
+"
+
+EXTRA_OECMAKE = " \
+    -DCMAKE_FIND_DEBUG_MODE=TRUE \
+    -DQT_HOST_PATH=${STAGING_DIR_NATIVE}${prefix_native} \
 "
 
 S = "${WORKDIR}/git"
-B = "${WORKDIR}/build"
+#B = "${WORKDIR}/buildd"
 
 APP_NAME="InfotainmentSystem-UI"
-
-do_configure(){
-    cmake -S ${S} -B ${B}
-}
-
-do_compile(){
-    cmake --build ${B}
-}
 
 do_install(){
     install -d ${D}/${bindir}
     install -m 0777 ${B}/${APP_NAME} ${D}/${bindir}
 }
+

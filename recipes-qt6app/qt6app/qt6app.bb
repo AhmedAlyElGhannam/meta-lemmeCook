@@ -1,7 +1,10 @@
 SUMMARY = "This is a simple recipe to fetch and build my qt app and attach a systemd service for it"
 MAINTAINER = "Ahmed Aly <ahmedaly.g112@gmail.com>"
 LICENSE = "CLOSED"
-SRC_URI = "git://github.com/AhmedAlyElGhannam/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B.git;branch=main"
+SRC_URI = "git://github.com/AhmedAlyElGhannam/Simple-Infotainment-System-Using-Qt6-and-Yocto-on-Raspberry-Pi-3B.git;branch=main;protocol=https"
+
+# since I do not want to use a specific commit I will set it to AUTOREV
+SRCREV = "${AUTOREV}"
 
 inherit pkgconfig qt6-cmake cmake
 

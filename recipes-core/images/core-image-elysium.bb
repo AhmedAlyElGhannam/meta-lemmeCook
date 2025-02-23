@@ -33,5 +33,4 @@ IMAGE_INSTALL:append = " \
     fastfetch \
 "
 
-# Add extra space to the root filesystem (5 GB, adjust if needed)
 IMAGE_ROOTFS_EXTRA_SPACE = "5242880"

@@ -8,9 +8,6 @@ SRC_URI += "file://logo.png \
 inherit features_check
 inherit systemd
 
-REQUIRED_DISTRO_FEATURES:append = " splash"
-REQUIRED_DISTRO_FEATURES:append = " systemd"
-
 SYSTEMD_SERVICE:${PN} = "splash.service"
 SYSTEMD_AUTO_ENABLE:${PN} = "enable"
 

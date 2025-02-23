@@ -6,9 +6,26 @@ SRC_URI = "git://github.com/AhmedAlyElGhannam/Simple-Infotainment-System-Using-Q
 # since I do not want to use a specific commit I will set it to AUTOREV
 SRCREV = "${AUTOREV}"
 
-inherit pkgconfig qt6-cmake cmake
+inherit cmake
 
-RDEPENDS:${PN} += "qtwayland qtmultimedia qtbase qtdeclarative qtlocation qtpositioning qtquick3d"
+DEPENDS += " \
+    qtbase \
+    qtdeclarative \
+    qtmultimedia \
+    qtwayland \
+    qtlocation \
+    qtpositioning \
+    qtquick3d \
+"
+
+RDEPENDS:${PN} += " \
+    qtwayland \
+    qtmultimedia \
+    qtdeclarative \
+    qtlocation \
+    qtpositioning \
+    qtquick3d \
+"
 
 S = "${WORKDIR}/git"
 B = "${WORKDIR}/build"

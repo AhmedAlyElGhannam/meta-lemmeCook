@@ -5,7 +5,6 @@ SRC_URI += "file://logo.png \
 	    file://psplash.service \
 "
 
-inherit features_check
 inherit systemd
 
 SYSTEMD_SERVICE:${PN} = "splash.service"

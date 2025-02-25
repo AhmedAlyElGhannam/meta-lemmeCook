@@ -11,8 +11,6 @@ DISTRO_FEATURES:append = " alsa bluetooth ipv4 ipv6 opengl systemd systemd-resol
 
 IMAGE_FEATURES += " \
     hwcodecs \
-    package-management \
-    splash \
     ssh-server-openssh \
     tools-debug \
     tools-sdk \
@@ -28,9 +26,12 @@ IMAGE_INSTALL:append = " \
     nano \
     rsync \
     make \
-    cmake \
-    qt6app \
+    openjdk-21-jre \
     fastfetch \
+    qt6app \
+    weston-init \
+    freerdp \ 
 "
+#     qt6app     splash cmake
 
 IMAGE_ROOTFS_EXTRA_SPACE = "5242880"

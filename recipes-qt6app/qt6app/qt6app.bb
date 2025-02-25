@@ -10,7 +10,7 @@ inherit qt6-cmake qt6-paths
 
 DEPENDS += " \
     qtbase \
-    qtdeclarative \
+    qtdeclarative-native \
     qtmultimedia \
     qtwayland \
     qtlocation \
@@ -18,6 +18,7 @@ DEPENDS += " \
     qtquick3d \
     qtquicktimeline \
     qttools \
+    qtapplicationmanager-native \
 "
 
 RDEPENDS:${PN} += " \
@@ -30,6 +31,7 @@ RDEPENDS:${PN} += " \
     qtquick3d \
     qtquicktimeline \
     qttools \
+    qtapplicationmanager \
 "
 
 EXTRA_OECMAKE = " \
@@ -42,8 +44,4 @@ S = "${WORKDIR}/git"
 
 APP_NAME="InfotainmentSystem-UI"
 
-do_install(){
-    install -d ${D}/${bindir}
-    install -m 0777 ${B}/${APP_NAME} ${D}/${bindir}
-}
 

@@ -16,6 +16,7 @@ IMAGE_FEATURES += " \
     tools-sdk \
     tools-testapps \
     weston \
+    splash \
 "
 
 IMAGE_INSTALL:append = " \
@@ -31,7 +32,13 @@ IMAGE_INSTALL:append = " \
     qt6app \
     weston-init \
     freerdp \ 
+    newuser \
+    someip \
+    systemd \
 "
+
+
+
 #     qt6app     splash cmake
 
 IMAGE_ROOTFS_EXTRA_SPACE = "5242880"

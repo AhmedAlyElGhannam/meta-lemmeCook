@@ -3,7 +3,7 @@ LICENSE = "CLOSED"
 inherit useradd
 
 # adding bash dependency here
-RDEPENDS:${PN} += " bash "
+# RDEPENDS:${PN} += " bash "
 
 # printf "%q" $(openssl passwd 123)
 PASSWD = "\$1\$N12AYgwa\$O/0MImfsfDt13ZoRcenyA."

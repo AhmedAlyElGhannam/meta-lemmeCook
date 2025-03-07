@@ -1,15 +1,19 @@
 [Unit]
 DESCRIPTION="Systemd service to run qt app on startup"
 DOCUMENTATION=""
-After=
-Before=
-Wants=
+After=multi.user.target
 
 [Service]
+# to start rdp
+# ExecStartPre=
 Type=simple
-ExecStart=/home/nemesis/appInfotainmentSystem-UI
+ExecStart=/usr/lib/appInfotainmentSystem-UI
 Restart=on-failure
 RestartSec=5
+
+Environment=DISPLAY=:0
+Environment=XDG_RUNTIME_DIR=/run/user/0
+Environment=QT_QPA_PLATFORM=wayland
 
 [Install]
 WantedBy=multi-user.target

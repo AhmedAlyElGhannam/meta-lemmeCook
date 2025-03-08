@@ -35,6 +35,7 @@ IMAGE_INSTALL:append = " \
     newuser \
     someip \
     systemd \
+    gpiotoggle-mod \
 "
 
 

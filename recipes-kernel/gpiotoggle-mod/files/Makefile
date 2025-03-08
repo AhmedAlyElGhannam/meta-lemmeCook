@@ -1,5 +1,5 @@
 # CHANGE THIS
-obj-m := hello.o
+obj-m := gpiotoggle.o
 
 SRC := $(shell pwd)
 

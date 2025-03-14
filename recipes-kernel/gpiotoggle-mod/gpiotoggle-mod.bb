@@ -12,4 +12,5 @@ SRC_URI = "file://Makefile \
 
 S = "${WORKDIR}"
 
+# kernel module is located under ./lib/modules/5.15.92-v8/extra/gpiotoggle.ko.xz
 RPROVIDES:${PN} += "kernel-module-gpiotoggle"

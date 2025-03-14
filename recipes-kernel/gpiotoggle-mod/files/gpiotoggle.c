@@ -73,16 +73,16 @@ int gpio_setPinDir(int pinNum, int dir)
     switch (pinNum)
     {
         case LED_PIN:
-            /* must define reg physical address as ptr to iomem then pass it to ioread */
-            void __iomem* fsel_reg = (void*)BCM2837_GPFSEL2; 
-            uint32_t val = ioread32(fsel_reg);
+            /* gpio base address with 0x30 offset size to include all relevant registers */
+            void __iomem* gpio_base = ioremap(BCM2837_GPIO_BASE, 0x30); 
+            uint32_t val = ioread32(gpio_base + 0x08);
 
             /* clear GPIO pin 26 fsel bits then make it output */
             val &= ~(0b111 << 18); 
             val |= (dir << 18);    
 
             /* write modified value in register */
-            iowrite32(val, fsel_reg);
+            iowrite32(val, gpio_base + 0x08);
         break;
 
         default:
@@ -100,17 +100,16 @@ int gpio_setPinVal(int pinNum, int val)
     switch (pinNum)
     {
         case LED_PIN:
-            /* defining reg physical address as ptr to iomem to use them in io operations */
-            void __iomem* set_reg = (void*)BCM2837_GPSET0;  
-            void __iomem* clr_reg = (void*)BCM2837_GPCLR0;  
+            /* gpio base address with 0x30 offset size to include all relevant registers */
+            void __iomem* gpio_base = ioremap(BCM2837_GPIO_BASE, 0x30); 
         
             if (val == PIN_HIGH) 
             {
-                iowrite32(1U << pinNum, set_reg);
+                iowrite32(1U << pinNum, (gpio_base+0x1C));
             } 
             else 
             {
-                iowrite32(1U << pinNum, clr_reg);
+                iowrite32(1U << pinNum, (gpio_base+0x28));
             }
         break;
 

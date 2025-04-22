@@ -27,7 +27,6 @@ IMAGE_INSTALL:append = " \
     nano \
     rsync \
     make \
-    openjdk-21-jre \
     fastfetch \
     qt6app \
     weston-init \
@@ -36,10 +35,17 @@ IMAGE_INSTALL:append = " \
     someip \
     systemd \
     gpiotoggle-mod \
+    gpioled-mod \
+    update-alternatives \
 "
 
 
 
-#     qt6app     splash cmake
+#     qt6app     splash cmake     openjdk-21-jre 
+# update-alternatives (for jdk21 rpm)
 
 IMAGE_ROOTFS_EXTRA_SPACE = "5242880"
+
+# adding support for package management to install JavaFX successfully
+PACKAGE_CLASSES ?= "package_rpm"
+EXTRA_IMAGE_FEATURES += "package-management"

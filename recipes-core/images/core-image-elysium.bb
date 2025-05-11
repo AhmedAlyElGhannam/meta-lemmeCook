@@ -36,7 +36,9 @@ IMAGE_INSTALL:append = " \
     systemd \
     gpiotoggle-mod \
     gpioled-mod \
+    python3-pyserial \
     update-alternatives \
+    gpiodts-mod \
 "
 
 
